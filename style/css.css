@@ -220,7 +220,6 @@ img {
     color: white;
     transition: right 0.4s ease;
 }
-
 /* Cuando se abre */
 .menu-lateral.open {
     right: 0;
@@ -272,7 +271,7 @@ img {
 .tarjeta {
     width: 80%;
     background-color: var(--dorado);
-    margin: 3.5rem auto;
+    margin: 5.5rem auto;
     padding: 2.5rem 0;
     border-radius: 1.5rem;
     color: var(--blanco);
@@ -280,16 +279,15 @@ img {
             #625a01,
             #938a09,
             #777301,
-            #9e9902
-          
-        );
+            #9e9902);
 
     box-shadow: 0px -1px 89px -15px rgba(0, 0, 0, 0.62);
     -webkit-box-shadow: 0px -1px 89px -15px rgba(0, 0, 0, 0.62);
-    -moz-box-shadow: 0px -1px 89px -15px rgba(0, 0, 0, 0.62); 
+    -moz-box-shadow: 0px -1px 89px -15px rgba(0, 0, 0, 0.62);
     transition: all 0.3s ease-in-out;
 
 }
+
 .tarjeta:hover {
     transform: scale(1.05);
 }
@@ -322,17 +320,20 @@ img {
     font-weight: 700;
     margin: 1rem 0;
 }
+
 .nosotros {
     width: 100%;
     background-color: var(--primario);
     color: var(--blanco);
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
+
 .nosotros-titulo {
     text-align: center;
     font-size: 3.2rem;
     font-weight: 700
 }
+
 .nosotros-contenido {
     max-width: 80%;
     margin: 0 auto;
@@ -340,4 +341,85 @@ img {
     font-size: 1.8rem;
     padding-top: 2rem;
     text-align: center;
+}
+
+.contacto {
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #e3e6e9;
+    color: var(--blaco);
+}
+
+.contacto-titulo {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.formulario {
+    /* border: 1px solid black; */
+    margin: 4rem auto;
+    width: 75%;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #004985;
+    box-shadow: 5px 8px 18px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 5px 8px 18px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 5px 8px 18px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.formulario fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.formulario input {
+    display: block;
+    width: 90%;
+}
+
+.formulario legend {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-weight: 700;
+}
+
+.formulario label {
+    display: block;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea,
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.formulario textarea {
+    resize: none;
+    overflow: scroll;
+}
+
+.formulario button {
+    transition: all 0.3s ease;
+    background-color: var(--secundario);
+    color: var(--blanco);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    transform: scale(1.07);
+    font-size: 1.6rem;
+    background-color: #12d782;
 }

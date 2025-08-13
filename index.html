@@ -34,7 +34,7 @@
                 <li><a href="#header">Inicio</a></li>
                 <li><a href="#main">Servicios</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </aside>
@@ -126,9 +126,45 @@
                     earum, veritatis aperiam libero repellat odio?Lorem ipsum dolor sit amet consectetur, adipisicing
                     elit. Non officia sequi autem provident sint expedita quasi ab saepe fuga optio molestias culpa
                     cumque eum, velit aperiam veritatis ut sed unde!</p>
-                <img src="img/contactanos.png" alt="Contactanos, Tu eres nuestra prioridad">
+                <img loading="lazy" src="img/contactanos.png" alt="Contactanos, Tu eres nuestra prioridad">
             </div>
+        </section>
+        <section id="contacto" class="contacto">
+            <h2 class="contacto-titulo">Envia un mensaje</h2>
+            <form class="formulario">
+                <fieldset class="formulario-grupo">
+                    <legend class="formulario-encabezado">Datos de contacto</legend>
+                    <label class="formulario-label" for="nombre">Nombre Completo: </label>
+                    <input class="formulario-campo" type="text" id="nombre" name="nombre" placeholder="Tu nombre"
+                        required>
 
+                    <label class="formulario-label" for="email">Correo</label>
+                    <input class="formulario-campo" type="email" id="email" name="email" requiered
+                        placeholder="correo@gmail.com">
+
+                    <label class="formulario-label" for="telefono">Celular</label>
+                    <input class="formulario-campo" type="tel" id="telefono" name="telefono" required
+                        placeholder="10 digitos">
+                </fieldset>
+
+                <fieldset class="contacto-formulario">
+                    <legend>Servicio Solicitado</legend>
+                    <label for="servicio">Selecciona una opcion</label>
+                    <select name="servicio" id="servicio" required>
+                        <option value="" disabled selected>-- Selecciona una opcion --</option>
+                        <option value="familiar">Derecho Familiar</option>
+                        <option value="corporativo">Derecho Corporativo</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensaje</legend>
+                    <label for="mensaje">Escribe tu mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="7" cols="30"
+                        placeholder="Necesito ayuda con..."></textarea>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <script src="javascript/script.js"></script>
