@@ -375,7 +375,12 @@ img {
     border: none;
     margin-bottom: 1.5rem;
 }
-
+small {
+    font-size: 1.2rem;
+    color: #fd1f1f;
+    font-weight: 700;
+    display: none;
+}
 .formulario input {
     display: block;
     width: 90%;
@@ -391,7 +396,7 @@ img {
 .formulario label {
     display: block;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .formulario input,
@@ -409,6 +414,7 @@ img {
 .formulario textarea {
     resize: none;
     overflow: scroll;
+    font-size: 1.6rem;
 }
 
 .formulario button {
@@ -427,8 +433,8 @@ img {
 
 .footer {
     width: 100%;
-    height: 15rem;
-    background-color: #004985;
+    background-color: var(--secundario);
+    padding: 2rem 0;
 
 }
 
@@ -436,7 +442,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 7rem;
+
 }
 
 .redes .redes-icono {
@@ -526,4 +532,12 @@ img {
             #c135b4,
             #e1306c,
             #fd1f1f);
+}
+.footer-parrafo {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
 }

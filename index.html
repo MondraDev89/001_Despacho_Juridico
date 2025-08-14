@@ -13,7 +13,7 @@
     <header id="header" class="header">
         <div class="hero-content">
             <h1>Despacho Juridico Gutierrez</h1>
-            <a href="#Contacto" class="contact-btn">Contactame</a>
+            <a href="#footer" class="contact-btn">Contactame</a>
         </div>
         <div class="nav-menu">
             <div class="logo"><a href="index.html">Despacho Juridico Gutierrez</a></div>
@@ -131,20 +131,22 @@
         </section>
         <section id="contacto" class="contacto">
             <h2 class="contacto-titulo">Envia un mensaje</h2>
-            <form class="formulario">
+            <form id="formulario" class="formulario">
                 <fieldset class="formulario-grupo">
                     <legend class="formulario-encabezado">Datos de contacto</legend>
                     <label class="formulario-label" for="nombre">Nombre Completo: </label>
                     <input class="formulario-campo" type="text" id="nombre" name="nombre" placeholder="Tu nombre"
                         required>
 
+                    <small id="emailError">El correo debe ser de Gmail.</small>
+
                     <label class="formulario-label" for="email">Correo</label>
-                    <input class="formulario-campo" type="email" id="email" name="email" requiered
+                    <input id="email" class="formulario-campo" type="email" id="email" name="email" requiered
                         placeholder="correo@gmail.com">
 
                     <label class="formulario-label" for="telefono">Celular</label>
                     <input class="formulario-campo" type="tel" id="telefono" name="telefono" required
-                        placeholder="10 digitos">
+                        placeholder="10 digitos" maxlength="10" pattern="\d{10}">
                 </fieldset>
 
                 <fieldset class="contacto-formulario">
@@ -160,15 +162,15 @@
                 <fieldset>
                     <legend>Mensaje</legend>
                     <label for="mensaje">Escribe tu mensaje</label>
-                    <textarea name="mensaje" id="mensaje" rows="7" cols="30"
-                        placeholder="Necesito ayuda con..."></textarea>
+                    <textarea name="mensaje" id="mensaje" rows="7" cols="30" placeholder="Necesito ayuda con..."
+                        required></textarea>
                 </fieldset>
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
     <footer id="footer" class="footer">
-        <div>
+        <div class="footer-media">
             <ul class="redes">
                 <li class="redes-icono">
                     <a data-social="WhatsApp" aria-label="Whatsapp" href="#">
@@ -205,6 +207,7 @@
                 </li>
             </ul>
         </div>
+        <p class="footer-parrafo">Todos los derechos reservados</p>
     </footer>
     <script src="javascript/script.js"></script>
 </body>

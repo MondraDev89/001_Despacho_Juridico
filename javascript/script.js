@@ -25,3 +25,21 @@ overlay.addEventListener('click', () => {
   sideMenu.classList.remove('open');
   overlay.classList.remove('visible');
 });
+
+//validar email
+const form = document.getElementById('formulario');
+const emailInput = document.getElementById('email');
+const emailError = document.getElementById('emailError');
+
+form.addEventListener('submit', function (event) {
+  const emailValue = emailInput.value.trim();
+  const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+  // Validación Gmail
+  if (!gmailPattern.test(emailValue)) {
+    emailError.style.display = 'block';
+    event.preventDefault();
+  } else {
+    emailError.style.display = 'none';
+  }
+});
