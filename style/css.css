@@ -220,6 +220,7 @@ img {
     color: white;
     transition: right 0.4s ease;
 }
+
 /* Cuando se abre */
 .menu-lateral.open {
     right: 0;
@@ -422,4 +423,107 @@ img {
     transform: scale(1.07);
     font-size: 1.6rem;
     background-color: #12d782;
+}
+
+.footer {
+    width: 100%;
+    height: 15rem;
+    background-color: #004985;
+
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.redes .redes-icono {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.redes .redes-icono .tooltip {
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+
+}
+
+.redes .redes-icono:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -5rem;
+
+}
+
+.redes .redes-icono a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.redes .redes-icono a:hover {
+    box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
+    color: #fff;
+}
+
+.redes .redes-icono a svg {
+    position: relative;
+    z-index: 1;
+    width: 3rem;
+    height: 3rem;
+}
+
+.redes .redes-icono a .icono-lleno {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.redes .redes-icono a:hover .icono-lleno {
+    height: 100%;
+}
+
+.redes .redes-icono a[data-social="WhatsApp"] .icono-lleno,
+.redes .redes-icono a[data-social="WhatsApp"]~.tooltip {
+    background-color: #128c7e;
+}
+
+.redes .redes-icono a[data-social="Facebook"] .icono-lleno,
+.redes .redes-icono a[data-social="Facebook"]~.tooltip {
+    background-color: #1069bb;
+}
+
+.redes .redes-icono a[data-social="Instagram"] .icono-lleno,
+.redes .redes-icono a[data-social="Instagram"]~.tooltip {
+    background: linear-gradient(45deg,
+            #405de6,
+            #5b51db,
+            #b33ab4,
+            #c135b4,
+            #e1306c,
+            #fd1f1f);
 }
