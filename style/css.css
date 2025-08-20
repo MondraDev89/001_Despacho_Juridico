@@ -356,7 +356,6 @@ img {
 
 .tarjeta {
     width: 80%;
-    background-color: var(--dorado);
     margin: 5.5rem auto;
     padding: 2.5rem 0;
     border-radius: 1.5rem;
@@ -379,15 +378,17 @@ img {
     font-size: 2.4rem;
     text-align: center;
     font-weight: 700;
+    color: #000000;
 }
 
 .tarjeta-contenido {
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
     padding: 1rem 2rem;
     margin: 2rem auto;
     line-height: 1.5;
+    color: #ffffff;
 }
 
 .tarjeta-lista {
@@ -399,15 +400,19 @@ img {
     text-align: center;
 }
 
-.tarjeta-lista h3 {
+.tarjeta-subtitulo {
+    text-align: center;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
     margin: 1rem 0;
+    color: #000000;
 }
 
 .tarjeta-lista li {
     padding: 0.5rem 0;
     transition: all 0.3s ease;
+    font-weight: 400;
+    color: #fff;
 
 }
 
@@ -420,14 +425,17 @@ img {
     font-size: 1.8rem;
     font-weight: 600;
 }
+
 /*Servicios tabletas*/
 @media (min-width: 768px) {
     .servicios {
         padding-bottom: 6rem;
     }
+
     .servicios-titulo {
         font-size: 4rem;
     }
+
     .tarjetas {
         display: grid;
         width: 85%;
@@ -436,27 +444,34 @@ img {
         gap: 5rem;
 
     }
+
     .tarjeta {
         width: unset;
         margin: unset;
     }
+
     .tarjeta-titulo {
         font-size: 3rem;
     }
+
     .tarjeta-contenido {
         font-size: 2rem;
     }
-    .tarjeta-lista h3 {
+
+    .tarjeta-subtitulo {
         font-size: 2.6rem;
     }
+
     .tarjeta-lista li {
         font-size: 2.2rem;
     }
+
     .tarjeta-lista li:hover {
-    font-size: 2.3rem;
-    font-weight: 600;
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
 }
-}
+
 /*Servicios pc*/
 @media (min-width: 1200px) {
     .tarjetas {
@@ -487,39 +502,46 @@ img {
     text-align: center;
     line-height: 2;
 }
+
 /*Nosotros tabletas*/
 @media (min-width: 768px) {
     .nosotros-titulo {
         font-size: 4rem;
         margin-bottom: 4rem;
     }
+
     .nosotros-contenido {
         display: flex;
         justify-content: center;
         align-items: center;
         max-width: 90%;
         font-size: 2rem;
-        
+
     }
+
     .nosotros-contenido img {
         max-width: 50%;
         transition: all 0.3s ease-out;
     }
+
     .nosotros-contenido img:hover {
         transform: scale(1.1);
     }
 }
+
 /*Nosotros pc*/
 @media (min-width: 1200px) {
     .nosotros-contenido p {
         max-width: 40%;
         line-height: 3;
     }
+
     .nosotros-contenido img {
         max-width: 35%;
         margin: unset;
     }
 }
+
 .contacto {
     width: 100%;
     padding-top: 4rem;
@@ -607,6 +629,78 @@ small {
     transform: scale(1.07);
     font-size: 1.6rem;
     background-color: #12d782;
+}
+
+/*Contacto para tabletas*/
+@media (min-width: 768px) {
+    .contacto-titulo {
+        font-size: 4rem;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+
+    .formulario legend {
+        font-size: 2.4rem;
+    }
+
+    .formulario label,
+    .formulario textarea,
+    .formulario button {
+        font-size: 2rem;
+    }
+
+    .formulario input,
+    .formulario select {
+        font-size: 1.8rem;
+    }
+
+    .formulario button {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .formulario button:hover {
+        font-size: 2rem;
+    }
+}
+
+/*Contacto para pc*/
+@media (min-width: 1200px) {
+    .contacto-titulo {
+        font-size: 5rem;
+    }
+
+    .formulario {
+        width: 30%;
+    }
+
+    .formulario legend {
+        font-size: 3.2rem;
+    }
+
+    .formulario label,
+    .formulario textarea,
+    .formulario button {
+        font-size: 2.8rem;
+    }
+
+    .formulario input,
+    .formulario select {
+        font-size: 2.4rem;
+    }
+
+    .formulario button {
+        display: block;
+        /* width: 35%; */
+        margin: 0 auto;
+    }
+
+    .formulario button:hover {
+        font-size: 3rem;
+    }
 }
 
 .footer {
