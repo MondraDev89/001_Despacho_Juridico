@@ -360,7 +360,11 @@ img {
     padding: 2.5rem 0;
     border-radius: 1.5rem;
     color: #071020;
-    background-image: url(../img/dorado.png);
+    background-image: -webkit-image-set(url("../img/dorado.avif") type("image/avif"),
+            url("../img/dorado.png") type("image/png"));
+
+    background-image: image-set(url("../img/dorado.avif") type("image/avif"),
+            url("../img/dorado.png") type("image/png"));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
