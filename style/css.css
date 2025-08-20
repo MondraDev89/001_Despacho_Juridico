@@ -356,18 +356,15 @@ img {
     margin: 5.5rem auto;
     padding: 2.5rem 0;
     border-radius: 1.5rem;
-    color: var(--blanco);
-    background: linear-gradient(135deg,
-            #625a01,
-            #938a09,
-            #777301,
-            #9e9902);
-
+    color: #071020;
+    background-image: url(../img/dorado.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     box-shadow: 0px -1px 89px -15px rgba(0, 0, 0, 0.62);
     -webkit-box-shadow: 0px -1px 89px -15px rgba(0, 0, 0, 0.62);
     -moz-box-shadow: 0px -1px 89px -15px rgba(0, 0, 0, 0.62);
     transition: all 0.3s ease-in-out;
-
 }
 
 .tarjeta:hover {
@@ -401,6 +398,20 @@ img {
     font-size: 2rem;
     font-weight: 700;
     margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .tarjetas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .tarjetas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .nosotros {
