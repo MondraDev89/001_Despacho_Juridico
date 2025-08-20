@@ -250,6 +250,87 @@ img {
     background-color: var(--cinco);
 }
 
+/*Header para tabletas*/
+@media (min-width: 768px) {
+    .logo {
+        width: 50%;
+    }
+
+    .logo a {
+        font-size: 1.8rem;
+        padding-left: 7%;
+    }
+
+    .contact-btn {
+        font-size: 2.5rem;
+    }
+
+    .contact-btn:hover {
+        font-size: 3rem;
+        transform: scale(1.05);
+    }
+}
+
+/*Header para laptops*/
+@media (min-width: 1024px) {
+    .hero-content h1 {
+        font-size: 6rem;
+    }
+
+    .contact-btn {
+        font-size: 3.5rem;
+    }
+
+    .contact-btn:hover {
+        font-size: 4rem;
+        transform: scale(1.05);
+    }
+
+    .logo a {
+        font-size: 2rem;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    .menu-lateral {
+        right: 0;
+        width: 50%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        color: black;
+        z-index: 2000;
+    }
+
+    .menu-lateral ul {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu-lateral li {
+        margin-bottom: 0;
+    }
+
+    .menu-lateral a {
+        font-size: 2rem;
+        color: var(--blanco);
+    }
+
+    .menu-lateral a:hover {
+        padding: 1rem 2rem;
+    }
+}
+
 .main {
     width: 100%;
 }
@@ -375,12 +456,14 @@ img {
     border: none;
     margin-bottom: 1.5rem;
 }
+
 small {
     font-size: 1.2rem;
     color: #fd1f1f;
     font-weight: 700;
     display: none;
 }
+
 .formulario input {
     display: block;
     width: 90%;
@@ -533,6 +616,7 @@ small {
             #e1306c,
             #fd1f1f);
 }
+
 .footer-parrafo {
     text-align: center;
     color: var(--blanco);
